@@ -1,0 +1,80 @@
+AI Prompt:
+
+"Using the provided file, create a comprehensive risk assessment report for NCA ECC compliance. For each domain, subdomain, domain code, control code, control name, control status, current status, recommendation, management response, and target date to resolve, organize the information in a structured format. Follow these steps:
+
+Extract Information: For each control listed in the file, extract the following details:
+
+Domain: The main domain name (e.g., Cybersecurity Governance).
+
+Subdomain: The subdomain name (e.g., Cybersecurity Strategy).
+
+Domain Code: The domain code (e.g., 1).
+
+Control Code: The control code (e.g., 1.1.1).
+
+Control Name: The name of the control (e.g., "A cybersecurity strategy must be defined, documented, and approved").
+
+Control Status: The current status of the control (e.g., Not Implemented, Partially Implemented, Implemented).
+
+Current Status: A brief description of the current status (e.g., "During the review, it was noted that the Saudi Ceramics have not defined a cybersecurity strategy").
+
+Recommendation: The recommended action to address the control (e.g., "It is recommended to define a cybersecurity strategy and get it approved by senior management").
+
+Management Response: The management's response to the recommendation (e.g., "Agree").
+
+Target Date: The target date to resolve the issue (e.g., "Will depend upon approval from HR").
+
+Organize Data: Present the extracted information in a structured table format with the following columns:
+
+Domain
+
+Subdomain
+
+Domain Code
+
+Control Code
+
+Control Name
+
+Control Status
+
+Current Status
+
+Recommendation
+
+Management Response
+
+Target Date
+
+Summarize Findings: Provide a summary of the overall compliance status for each domain, highlighting the number of controls that are Not Implemented, Partially Implemented, and Implemented. Include any critical risks or gaps that need immediate attention.
+
+Prioritize Risks: Based on the control status and target dates, prioritize the risks and provide a timeline for addressing the most critical issues.
+
+Output Format: Ensure the output is clear, concise, and easy to read. Use bullet points or tables where appropriate to enhance readability.
+
+Additional Notes: If any controls are marked as "Not Applicable," exclude them from the risk assessment but mention them in a separate section for reference.
+
+Example Output Format:
+
+Domain	Subdomain	Domain Code	Control Code	Control Name	Control Status	Current Status	Recommendation	Management Response	Target Date
+Cybersecurity Governance	Cybersecurity Strategy	1	1.1.1	A cybersecurity strategy must be defined, documented, and approved	Not Implemented	During the review, it was noted that the Saudi Ceramics have not defined a cybersecurity strategy.	It is recommended to define a cybersecurity strategy and get it approved by senior management.	Agree	Will depend upon approval from HR
+Cybersecurity Governance	Cybersecurity Strategy	1	1.1.2	A roadmap must be executed to implement the cybersecurity strategy	Not Implemented	During the review, it was noted that the Saudi Ceramics have not defined a cybersecurity strategy.	It is recommended to define a cybersecurity strategy and then develop the implementation roadmap.	Agree	Will depend upon approval from HR
+Summary of Findings:
+
+Cybersecurity Governance: 10 controls Not Implemented, 5 controls Partially Implemented, 3 controls Implemented.
+
+Cybersecurity Defense: 15 controls Not Implemented, 10 controls Partially Implemented, 20 controls Implemented.
+
+Critical Risks: Lack of a dedicated cybersecurity department and cybersecurity strategy. Immediate action is required to address these gaps.
+
+Prioritized Risks:
+
+Define and approve a cybersecurity strategy (Target Date: Q2 2025).
+
+Establish a dedicated cybersecurity department (Target Date: Q2 2025).
+
+Implement cybersecurity awareness program (Target Date: Q3 2025).
+
+This prompt will guide the AI to generate a detailed and structured risk assessment report based on the provided file, ensuring all necessary information is included and organized effectively."
+
+propmt in  tubular form  and final reports show the  assessment report I  graphical representation

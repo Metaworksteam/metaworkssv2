@@ -1,0 +1,125 @@
+AI Prompt for ITGC and Cybersecurity Risk Assessment Report Generation
+Objective:
+Create a comprehensive AI-powered system that performs detailed risk assessments for IT General Controls (ITGC) and cybersecurity, generates printable reports, saves the output, and maintains a database of assessment results.
+
+Detailed Prompt:
+"Develop an AI-powered risk assessment tool that performs the following functions:
+
+Risk Assessment Scope Definition:
+
+Automatically identify all ITGC domains (access controls, change management, backup procedures, etc.)
+
+Map all cybersecurity areas (network security, endpoint protection, data privacy, etc.)
+
+Generate a customizable assessment framework based on industry standards (ISO 27001, NIST CSF, COBIT)
+
+Detailed Assessment Process:
+
+For each control area, generate specific evaluation criteria
+
+Create weighted scoring based on risk impact and likelihood
+
+Include automated control testing procedures where applicable
+
+Incorporate threat modeling for cybersecurity components
+
+Data Collection Interface:
+
+Generate interactive questionnaires for manual input
+
+Create API connectors for automated system data collection
+
+Include document upload capabilities for evidence gathering
+
+Implement natural language processing for analyzing policy documents
+
+Risk Analysis Engine:
+
+Calculate risk scores for each control area
+
+Identify control gaps and vulnerabilities
+
+Prioritize risks based on business impact
+
+Generate heat maps and visual risk representations
+
+Report Generation:
+
+Create comprehensive PDF reports with:
+
+Executive summary
+
+Detailed findings
+
+Risk ratings
+
+Recommended remediation actions
+
+Implementation timelines
+
+Include visualizations (charts, graphs, matrices)
+
+Allow customization of report templates
+
+Database Integration:
+
+Design a relational database schema to store:
+
+Assessment results
+
+Historical data
+
+Control evidence
+
+Remediation tracking
+
+Implement CRUD operations for data management
+
+Include version control for assessments
+
+System Features:
+
+User authentication and role-based access
+
+Audit trail of all assessment activities
+
+Automated reminders for reassessments
+
+Integration capabilities with GRC platforms
+
+Export functionality in multiple formats (CSV, JSON, PDF)
+
+Output Requirements:
+
+Generate printer-friendly reports with proper formatting
+
+Save reports to designated cloud/local storage
+
+Maintain database records with timestamps
+
+Create executive dashboards for monitoring
+
+The system should use AI to:
+
+Learn from previous assessments to improve future evaluations
+
+Suggest control improvements based on industry best practices
+
+Automatically update risk profiles based on emerging threats
+
+Provide natural language explanations of technical risks for different audiences
+
+Include data validation and error handling throughout the process to ensure assessment accuracy and reliability."
+
+Implementation Notes:
+The system should be adaptable for different organizational sizes and industries
+
+Include sample datasets for demonstration purposes
+
+Provide API documentation for integration with other systems
+
+Ensure all data handling complies with relevant privacy regulations
+
+Include help documentation and tooltips throughout the interface
+
+Would you like me to elaborate on any specific component of this prompt or adjust the focus areas for your particular use case?

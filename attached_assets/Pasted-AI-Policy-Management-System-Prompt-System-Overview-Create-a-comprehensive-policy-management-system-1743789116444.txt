@@ -1,0 +1,153 @@
+AI Policy Management System Prompt
+System Overview
+Create a comprehensive policy management system that allows organizations to generate customized policy documents by uploading templates and automatically replacing placeholders with company-specific information. The system should handle document generation, storage, viewing, and distribution.
+
+Core Features
+Document Customization Engine
+
+Accept policy templates in Word (.docx) and PDF formats
+
+Identify and replace the following placeholders:
+
+[COMPANY_NAME] - Organization's legal name
+
+[COMPANY_LOGO] - Uploaded logo image
+
+[CEO_NAME] - Chief Executive Officer's name
+
+[CIO_NAME] - Chief Information Officer's name
+
+[EFFECTIVE_DATE] - Auto-generated date
+
+Maintain original document formatting during replacement
+
+Document Management
+
+Generate output in both Word and PDF formats
+
+Version control for all policy documents
+
+Approval workflow before finalization
+
+User Interface Components
+
+Upload portal for templates
+
+Form for entering company-specific information
+
+Preview panel to review generated documents
+
+Download/print options for final documents
+
+Database Structure
+
+Copy
+Companies
+- company_id (PK)
+- company_name
+- logo_path
+- ceo_name
+- cio_name
+- date_created
+- last_updated
+
+PolicyTemplates
+- template_id (PK)
+- template_name
+- template_type (Word/PDF)
+- file_path
+- category_id (FK)
+- date_uploaded
+
+GeneratedPolicies
+- policy_id (PK)
+- template_id (FK)
+- company_id (FK)
+- generated_file_path
+- version
+- generation_date
+- approval_status
+- approved_by
+- approved_date
+
+PolicyCategories
+- category_id (PK)
+- category_name
+- description
+Catalog System
+
+Browse all generated policies by category
+
+Search functionality (by policy name, date, version)
+
+Filter by approval status
+
+Bulk download/print options
+
+Access control/permissions management
+
+Technical Requirements
+Document Processing
+
+Use Python's python-docx for Word document manipulation
+
+Implement PyPDF2 or pdfrw for PDF processing
+
+Image handling for logo placement with size normalization
+
+Database
+
+PostgreSQL or MySQL backend
+
+ORM for database interactions
+
+Regular backups
+
+Web Interface
+
+Responsive design (Bootstrap or similar)
+
+Document preview using embedded viewers
+
+User authentication system
+
+Security
+
+Role-based access control
+
+Document encryption at rest
+
+Audit trails for all document operations
+
+User Flow
+Administrator uploads policy templates
+
+System extracts placeholder tags from templates
+
+User enters company-specific information
+
+System generates customized documents
+
+User previews and approves documents
+
+Approved documents are stored in the catalog
+
+Authorized users can view, download, or print from catalog
+
+Output Options
+Single policy document generation
+
+Batch processing for multiple policies
+
+Policy package creation (zip of all company policies)
+
+Printable versions with consistent headers/footers
+
+Error Handling
+Invalid template format detection
+
+Missing placeholder warnings
+
+Version conflict alerts
+
+Approval workflow enforcement

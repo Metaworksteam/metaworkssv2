@@ -1,0 +1,97 @@
+AI Prompt: Automated Risk Assessment Dashboard with Live Scoring
+Objective
+Build an AI-driven dashboard that:
+✔ Displays real-time compliance scores for NCA ECC, SAM, and PDPL assessments
+✔ Visualizes risk levels (High/Medium/Low) with drill-down capabilities
+✔ Tracks progress vs. previous assessments and target benchmarks
+✔ Generates alerts for critical failures or declining scores
+
+1. Dynamic Scoring Engine
+Automated scoring per framework:
+
+NCA ECC: % compliance per domain (e.g., "Access Control: 85%")
+
+SAM: Maturity level (Baseline/Developing/Advanced/Leading)
+
+PDPL: Article-by-article compliance status (Compliant/Partially/Non-Compliant)
+
+Weighted risk calculation (Impact × Likelihood) for prioritized remediation
+
+2. Dashboard Visualization Requirements
+A. Executive Summary Widget
+Traffic Light Overview:
+
+🟢 Green (≥85% compliant)
+
+🟡 Yellow (70-84%)
+
+🔴 Red (<70%)
+
+Trend Arrows: Show improvement/decline vs. last assessment (e.g., "SAM: 78% ▲2%")
+
+B. Framework-Specific Scorecards
+✅ NCA ECC
+
+Bar chart: Compliance % per domain (Governance, Access Control, etc.)
+
+Top 3 Risks: List controls with the lowest scores
+
+Industry Benchmark Comparison: Show gap vs. sector average
+
+✅ SAM Framework
+
+Radar chart: Maturity across 5 capability areas
+
+Gap Analysis: Visualize missing controls for target maturity level
+
+✅ PDPL
+
+Compliance Heatmap: Articles with pass/fail status
+
+Data Flow Map: Highlight high-risk processing activities
+
+C. Risk Prioritization Panel
+Top 5 Critical Risks across all frameworks
+
+Remediation Progress: Track open/closed actions
+
+3. Database Integration for Historical Tracking
+Store all scores with timestamps for trend analysis
+
+Compare multiple assessments (e.g., "Q3 2023 vs. Q2 2023")
+
+Export score data to CSV/PDF for audits
+
+4. Sample Dashboard Output
+markdown
+Copy
+[LIVE DASHBOARD - EXAMPLE]  
+--------------------------------------------------------------------
+| Overall Compliance: 80% (NCA ECC: 85% | SAM: 75% | PDPL: 72%)     |
+|------------------------------------------------------------------|
+| NCA ECC DOMAINS       | SCORE | TREND  | RISK LEVEL              |
+|-----------------------|-------|--------|--------------------------|
+| Access Control        | 92%   | ▲1%    | Low                     |
+| Incident Response     | 68%   | ▼5%    | High (Critical)         |
+| Data Encryption       | 81%   | ►      | Medium                  |
+--------------------------------------------------------------------
+[TOP RISKS]  
+1. SAM-DM-08: No data retention policy (High)  
+2. NCA-IR-04: Missing incident playbook (High)  
+3. PDPL-ART-22: No DPIA for cloud processing (Medium)  
+--------------------------------------------------------------------
+[ACTIONS REQUIRED] » 3 Critical | 12 Medium | 5 Low  
+5. AI Enhancements for Scoring Accuracy
+Auto-adjust weights based on regulatory updates
+
+Predictive scoring: Forecast future compliance based on current trends
+
+Natural language summaries: "Access Control improved due to new PAM tool"
+
+Next Steps?
+
+Should I add specific scoring formulas for each framework?
+
+Include dashboard UI mockups?
+
+Add integration with SIEM/GRC tools for auto-data pull?

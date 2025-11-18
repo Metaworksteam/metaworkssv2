@@ -1,0 +1,85 @@
+Objective:
+Redesign the “Book a Demo” section on the MetaWorks site to integrate an embedded Calendly scheduler directly into the right-hand side of the section, allowing users to book a slot seamlessly within the same page.
+
+Functional Requirements
+
+Left Section (Keep As-Is):
+
+Retain the existing content under “What You’ll Get” (Personalized Demo, Expert Consultation, ROI Analysis, Free Trial Access).
+
+Preserve all icons, text hierarchy, and current visual alignment.
+
+Right Section (Replace Existing Form):
+
+Replace the form fields and “Request Demo” button with an embedded Calendly scheduling interface, allowing users to select a time slot directly.
+
+Use the Calendly inline embed (not redirect).
+
+<div class="calendly-inline-widget" 
+     data-url="https://calendly.com/abdullaharoomi/30min" 
+     style="min-width:320px; height:650px;">
+</div>
+<script type="text/javascript" 
+        src="https://assets.calendly.com/assets/external/widget.js" async>
+</script>
+
+
+Unified Layout:
+
+Merge both the left and right sections into a single combined rectangular container.
+
+Maintain a two-column layout (left = info, right = Calendly booking UI).
+
+On mobile (<900px), collapse into one column (Calendly below the info section).
+
+Design & Styling
+
+Gradient Background:
+
+Use the same gradient colors currently applied to the right-side information box (the one visible in the screenshot).
+
+Apply this gradient across the entire combined rectangle, ensuring visual consistency.
+
+Container Styling:
+
+Rounded corners: 16px.
+
+Padding: 40px internal spacing.
+
+Soft box-shadow for elevation (similar to the current right-side box).
+
+Ensure no clipping or cutoff occurs during scroll.
+
+Calendly Box Styling:
+
+Integrate seamlessly with the background gradient (no separate background color).
+
+Rounded corners and subtle transparency to match brand tone.
+
+Maintain full height alignment with the left section content.
+
+Typography:
+
+Headings: Bright aqua #00f0ff.
+
+Body text: rgba(255,255,255,0.85).
+
+Font family consistent with current MetaWorks site.
+
+Responsive Behavior
+
+On desktop: Two-column layout (50/50 split).
+
+On tablet/mobile: Stack vertically, with Calendly appearing below the “What You’ll Get” content.
+
+Ensure gradient remains visible and consistent across all viewports.
+
+Outcome
+
+A single, unified gradient-styled rectangle combining:
+
+Left: The “What You’ll Get” section (unchanged).
+
+Right: An inline Calendly booking interface where users can instantly view available time slots and confirm a meeting without leaving the page.
+
+The entire section should feel cohesive, modern, and aligned with the MetaWorks visual brand — offering a smooth, integrated demo booking experience that enhances conversion and professionalism.

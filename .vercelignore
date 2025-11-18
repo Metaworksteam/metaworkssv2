@@ -1,0 +1,10 @@
+node_modules
+.git
+.env
+*.log
+.DS_Store
+.replit
+replit.nix
+.config
+tmp
+.cache

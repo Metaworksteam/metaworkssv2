@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MetaWorks Virtual Cybersecurity Consultant</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      background-color: #0f172a;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    #did-agent {
+      width: 100%;
+      height: 100%;
+    }
+    .agent-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+    }
+    .loading {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0,0,0,0.7);
+      border-radius: 8px;
+      padding: 20px;
+      z-index: 5;
+    }
+    .loading-spinner {
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top: 4px solid #fff;
+      width: 30px;
+      height: 30px;
+      animation: spin 1s linear infinite;
+      margin-right: 10px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .error-message {
+      display: none;
+      background-color: rgba(220, 38, 38, 0.8);
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px;
+      text-align: center;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <div class="agent-container">
+    <div id="loading" class="loading">
+      <div class="loading-spinner"></div>
+      <span>Loading your virtual consultant...</span>
+    </div>
+    <div id="error-message" class="error-message">
+      Unable to load the virtual consultant. Please check your connection and try again.
+    </div>
+    <div id="did-agent"></div>
+  </div>
+
+  <script
+    type="module"
+    src="https://agent.d-id.com/v1/index.js"
+    data-name="did-agent"
+    data-target="#did-agent"
+    data-mode="fabio"
+    data-client-key="Z29vZ2xlLW9hdXRoMnwxMDc5MjM0NjY3NDY1MDUyMTM2OTE6WHJvRFFSYnBHMng2SXJGRDlIcjZD"
+    data-agent-id="agt_YjpQXzSG"
+    data-monitor="true">
+  </script>
+
+  <script>
+    // Handle loading state
+    document.addEventListener('DOMContentLoaded', () => {
+      const script = document.querySelector('script[data-name="did-agent"]');
+      
+      // Hide loading when agent is loaded
+      script.onload = () => {
+        console.log('D-ID Agent script loaded successfully');
+        document.getElementById('loading').style.display = 'none';
+      };
+      
+      // Show error if loading fails
+      script.onerror = (error) => {
+        console.error('Error loading D-ID Agent script:', error);
+        document.getElementById('error-message').style.display = 'block';
+        document.getElementById('loading').style.display = 'none';
+      };
+    });
+  </script>
+</body>
+</html>

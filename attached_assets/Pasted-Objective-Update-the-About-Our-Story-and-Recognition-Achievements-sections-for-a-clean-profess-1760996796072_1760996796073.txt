@@ -1,0 +1,86 @@
+Objective:
+Update the About, Our Story, and Recognition & Achievements sections for a clean, professional, and visually consistent look. Keep the pricing section unchanged.
+
+1. About Section – Supported By Logos
+
+Task: Make MCIT and Misk logos equal in size.
+
+Design Requirements:
+
+Logo container: rectangle with equal width and height.
+
+Minimum width: 180px; Height: 100px (responsive).
+
+White-transparent glass gradient background with backdrop blur.
+
+Center logos vertically and horizontally.
+
+Rounded corners (12px) and subtle border.
+
+CSS Reference:
+
+.support-logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 100px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.support-logo-box img {
+  max-width: 100px;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+
+2. Our Story Section
+
+Refine and professionalize the text.
+
+Keep MCIT and Misk Launchpad support mentions.
+
+Make language more concise, attractive, and corporate-grade.
+
+3. Recognition & Achievements Section
+
+Remove: “Code Tech Champions 5” mention.
+
+Keep: Graduate 1 and Tech Champions 5.
+
+Add: “Trusted By Major Companies in the Kingdom” subsection.
+
+Companies to Include: Honda, Saudi Ceramics, HTC, Elm, PIF, PwC, STC, Sports Boulevard Foundation, Ministry of Energy.
+
+Design:
+
+Use same frosted-glass, transparent boxes as “Supported By” logos.
+
+Ensure equal sizing, spacing, and alignment for professional, enterprise feel.
+
+Suggested Text:
+
+🏆 Recognitions & Achievements
+- Graduate: Tech Champions 5
+
+💼 Trusted By
+Used by professionals from leading organizations including:
+Honda, Saudi Ceramics, HTC, Elm, PIF, PwC, STC, Sports Boulevard Foundation, Ministry of Energy
+
+
+4. Pricing Section
+
+Leave unchanged.
+
+Outcome Expected:
+
+About section: two perfectly aligned, white-transparent glass logos.
+
+Our Story: polished, professional narrative.
+
+Recognition & Achievements: verified recognitions + “Trusted By” companies displayed in clean, uniform, glass-effect logo boxes.
+
+Overall: professional, consistent dark-theme look with aqua accent headings and frosted glass design.

@@ -1,0 +1,32 @@
+{
+  "title": "Meta Works Website Feature Enhancement & UI Deep Dive",
+  "objective": "Enhance the Meta Works website by fixing non-functional elements, developing key interactive features, and optimizing Solution, About, and Pricing sections for a professional, corporate, and attractive UI experience.",
+  "current_issues": [
+    "Buttons in the subscreen Solution, Pricing, and About are not functional. These must be fully operational and visually engaging.",
+    "There is no functional Contact Us system. Users must be able to send messages/applications through the website, which should be reliably received by the admin via email or backend logging.",
+    "There is no functional Book a Demo / Free Trial system. Users should be able to request a demo or trial, and admin should receive these requests via email."
+  ],
+  "requirements": {
+    "about_section": {
+      "content": "Present Meta Works as a cybersecurity company born and raised in Saudi Arabia, highlight graduation from Misk Launchpad 7 and Tech Champions 5, and support from MCIT (Ministry of Communication and Information Technology) and Code Tech Champions 5.",
+      "design": "High-level corporate, visually appealing, professional"
+    },
+    "solution_section": {
+      "content": "Provide a full-page detailed presentation of Meta Works’ solution, describe features and benefits",
+      "design": "Professional, UI-friendly, visually attractive, easily readable"
+    },
+    "pricing_section": {
+      "plans": ["Basic", "Standard", "Premium"],
+      "cta_buttons": ["Free Trial", "Book a Demo"],
+      "design": "Clear, readable, professional"
+    },
+    "functional_requirements": {
+      "fix_buttons": ["Solution", "Pricing", "About"],
+      "contact_us_form": {
+        "fields": ["Name", "Email", "Message/Application"],
+        "validation": ["Correct email format", "Required fields"],
+        "submission": "Triggers email to admin or logs in backend"
+      },
+      "book_demo_form": {
+        "fields": ["Name", "Email", "Message"],
+        "optional": ["]()

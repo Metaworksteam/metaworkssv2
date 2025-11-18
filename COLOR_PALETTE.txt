@@ -1,0 +1,95 @@
+╔══════════════════════════════════════════════════════════════╗
+║           METAWORKS COLOR PALETTE - QUICK REFERENCE          ║
+╚══════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PRIMARY COLORS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔵 CYAN (Brand Primary)
+   HEX:  #00AEEF
+   RGB:  rgb(0, 174, 239)
+   HSL:  hsl(194, 100%, 46%)
+   Use:  Buttons, CTAs, Links, Logo
+
+🟢 EMERALD (Secondary)
+   HEX:  #10B981
+   RGB:  rgb(16, 185, 129)
+   HSL:  hsl(160, 84%, 39%)
+   Use:  Gradients, Success, Accents
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DARK THEME COLORS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⬛ BACKGROUND DARK 1 (Darkest)
+   HEX:  #0A0F14
+   RGB:  rgb(10, 15, 20)
+   Use:  Main background
+
+⬛ BACKGROUND DARK 2
+   HEX:  #0F1517
+   RGB:  rgb(15, 21, 23)
+   Use:  Sections, Glass effects
+
+⬛ CARD BACKGROUND
+   HEX:  #1A1F24
+   RGB:  rgb(26, 31, 36)
+   Use:  Cards, Panels
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TEXT COLORS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⬜ WHITE (Primary Text)
+   HEX:  #FFFFFF
+   RGB:  rgb(255, 255, 255)
+   Use:  Headlines, Body (85-90% opacity)
+
+◽ GRAY (Secondary Text)
+   HEX:  #9CA3AF
+   RGB:  rgb(156, 163, 175)
+   Use:  Descriptions, Labels
+
+◽ MUTED GRAY
+   HEX:  #6B7280
+   RGB:  rgb(107, 114, 128)
+   Use:  Placeholders, Disabled text
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS COLORS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ SUCCESS:  #10B981  (Emerald Green)
+⚠️  WARNING:  #F59E0B  (Amber)
+❌ ERROR:    #EF4444  (Red)
+ℹ️  INFO:     #3B82F6  (Blue)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GRADIENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌈 PRIMARY GRADIENT (135°)
+   From: #00AEEF (Cyan)
+   To:   #10B981 (Emerald)
+   CSS:  linear-gradient(135deg, #00AEEF 0%, #10B981 100%)
+
+💎 GLASS EFFECT
+   BG:   rgba(15, 21, 23, 0.6)
+   Blur: backdrop-filter: blur(10px)
+   Border: 1px solid rgba(255, 255, 255, 0.1)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+COPY-PASTE READY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+#00AEEF  // Cyan Primary
+#10B981  // Emerald Secondary
+#0A0F14  // Background Dark
+#0F1517  // Background Glass
+#FFFFFF  // Text White
+#9CA3AF  // Text Gray
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📄 Full Documentation: See METAWORKS_BRAND_KIT.md
